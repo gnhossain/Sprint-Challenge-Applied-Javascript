@@ -17,3 +17,17 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+
+axios
+  .get(" https://lambda-times-backend.herokuapp.com/articles")
+  .then(response => {
+    console.log(response.data);
+    // const cards = document.querySelector('.cards');
+    // const gitcard = createCard(response.data);
+    // cards.appendChild(gitcard);
+    })
+
+  .catch(error => {
+    console.log("The data was not returned", error);
+  });
