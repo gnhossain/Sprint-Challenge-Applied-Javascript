@@ -25,7 +25,7 @@ header.appendChild(temp);
 //class
 header.classList.add('header');
 date.classList.add('date');
-span.classList.add('temp');
+temp.classList.add('temp');
 
 //content
 date.textContent = 'SMARCH 28, 2019';
